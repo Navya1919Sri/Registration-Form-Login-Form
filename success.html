@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body style="color: rgb(245, 2, 2);">
+    <h1 align="center">LOGIN FORM</h1>
+    <form id="loginForm">
+        <style>
+form    {
+        background-color: rgb(196, 166, 224);
+        padding: 80px;
+        width: 500px;
+        margin: auto;
+        border-radius: 10px;
+        }
+        </style>
+        <label>USERNAME:</label>
+        <input name="USERNAME" type="text" id="username">
+        <br></br>
+        <label>PASSWORD:</label>
+        <input name="PASSWORD" type="password" id="password">
+        <br></br>
+        <button type="submit">LOGIN</button>
+        <p id="message"></p>
+        <script>
+            let params=new URLSearchParams(window.location.search)
+            let registeredusername=params.get("USERNAME")
+            let registeredpassword=params.get("PASSWORD")
+            document.getElementById("loginForm").addEventListener("submit",
+                function(event)
+                {
+                    event.preventDefault()
+                    username=document.getElementById("username").value
+                    password=document.getElementById("password").value
+                    if( username===registeredusername && password===registeredpassword)
+                    {
+                    document.getElementById("message").textContent=username+" Loggined in Successfully!"
+                    }
+                        else
+                        document.getElementById("message").textContent=username+" Loggined in Fauiled!"  
+                }
+                )
+        </script>
+    </form>
+</body>
+</html>
