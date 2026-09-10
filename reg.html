@@ -5,7 +5,7 @@
     </head>
     <body style="color: rgb(235, 133, 17);">
         <h1 align="center"> EMPLOYEE REGISTRATION FORM</h1>
-        <form style="color: rgb(252, 10, 10);" id="registrationform" action="success.html" method="GET">
+        <form style="color: rgb(252, 10, 10);" action="/register" method="POST">
             <style>
     form {
         background-color: lightblue;
@@ -13,42 +13,42 @@
         width: 500px;
         margin: auto;
         border-radius: 10px;
-    }
+        }
             </style>
             <label>FULL NAME:  </label>
-            <input type="text"  name="FULL NAME" placeholder="ENTER YOUR NAME" id="name">
+            <input type="text"  name="fullname" placeholder="ENTER YOUR NAME" id="name">
             <br></br>
             <label>USERNAME:  </label>
-            <input type="number" name="USERNAME" placeholder="ENTER USERNAME" id="username">
+            <input type="text" name="username" placeholder="ENTER USERNAME" id="username">
             <br></br>
             <label>EMAIL:  </label>
-            <input type="email" name="EMAIL" placeholder="gmail.com" id="email">
+            <input type="email" name="email" placeholder="gmail.com" id="email">
             <br></br>
             <label>PASSWORD:</label>
-            <input type="password" name="PASSWORD" placeholder="password" id="password">
+            <input type="password" name="password" placeholder="password" id="password">
             <br></br>
             <label>CONFIRM PASSWORD:</label>
-            <input type="password" name="CONFIRM PASSWORD" placeholder="password">
+            <input type="password" name="confirm password" placeholder="password">
             <br></br>
             <label>PHONE NO:</label>
-            <input type="tel" name="PHONE NO:" placeholder="number" id="phone">
+            <input type="tel" name="phone no" placeholder="number" id="phone">
             <br></br>
             <label>DATE OF BIRTH:</label>
-            <input type="date" name="DATE OF BIRTH" placeholder="DOC" id="dob">
+            <input type="date" name="date of birth" placeholder="DOC" id="dob">
             <br></br>
             <label>GENDER:</label>
-            <input type="radio" name="GENDER" value="Male">Male
-            <input type="radio" name="GENDER" value="Female">Female
-            <input type="radio" name="GENDER" value="Other">Other
+            <input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female
+            <input type="radio" name="gender" value="Other">Other
             <br></br>
             <label>ADDRESS:</label>
-            <textarea name="ADDRESS" rows="2" cols="30"></textarea>
+            <textarea name="address" rows="2" cols="30"></textarea>
             <br></br>
             <label>CITY:</label>
-            <input type="text" name="CITY" placeholder="city">
+            <input type="text" name="city" placeholder="city">
             <br></br>
             <label for="STATE">STATE:</label>
-            <select id="state" name="STATE">
+            <select id="state" name="state">
     <option value="">-- Select State --</option>
     <option value="Andhra Pradesh">Andhra Pradesh</option>
     <option value="Arunachal Pradesh">Arunachal Pradesh</option>
@@ -129,23 +129,23 @@
             </select>
             <br></br>
             <label>PINCODE:</label>
-            <input type="number" name="PINCODE">
+            <input type="number" name="pincode">
             <br></br>
             <label>UPLOAD PROFILE PIC:</label>
-            <input type="file" name="UPLOAD PROFILE PIC" >
+            <input type="file" name="upload profile pic" >
             <br></br>
             <label>HOBBIES:</label>
-            <input type="checkbox" name="HOBBIES" value="Reading">Reading
-            <input type="checkbox" name="HOBBIES" value="Artist">Artist
-            <input type="checkbox" name="HOBBIES" value="Singing">Singing
-            <input type="checkbox" name="HOBBIES" value="Dancing">Dancing
-            <input type="checkbox" name="HOBBIES" value="playing">Playing
+            <input type="checkbox" name="hobbies" value="Reading">Reading
+            <input type="checkbox" name="hobbies" value="Artist">Artist
+            <input type="checkbox" name="hobbies" value="Singing">Singing
+            <input type="checkbox" name="hobbies" value="Dancing">Dancing
+            <input type="checkbox" name="hobbies" value="playing">Playing
             <br></br>
             <label>TERMS AND CONDITIONS:</label>
             <br></br>
-            <input type="checkbox" name="TEARMS AND COnDITIONS" value="2 years experience">2 years experience
+            <input type="checkbox" name="terms and conditions" value="2 years experience">2 years experience
             <br></br>
-            <input type="checkbox" name="TEARMS AND COnDITIONS" value="Need to maintain confidentiality the company">Need to maintain confidentiality the company
+            <input type="checkbox" name="terms and conditions" value="Need to maintain confidentiality the company">Need to maintain confidentiality the company
             <br></br>
             <button id="submit" type="submit">REGISTER</button>
             <button type="reset">RESET</button>
